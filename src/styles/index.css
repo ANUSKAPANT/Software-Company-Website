@@ -1,0 +1,893 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+p {
+    color: #777777;
+}
+
+/*********************/
+/*     Navigation    */
+/*********************/
+
+#head {
+	transition: all 0.1s;
+}
+
+#head .navbar {
+    min-height: 150px;
+    position: absolute;
+}
+
+#head .navbar-nav > li > a {
+	font-family: 'Lato', sans-serif;
+	text-transform: capitalize;
+	color: rgb(45, 45, 88);
+	font-size: 15px;
+    font-weight: 600;
+	padding: 15px 0px;
+    border-radius: 0;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: transform .2s;
+}
+#head .navbar-nav > li:last-of-type > a {
+    margin-right: 0;
+}
+
+#head .navbar-nav > li > a.active{
+    font-size: 18px;
+    color: #006d61;
+}
+
+#head .navbar-nav > li > a:hover {
+    color: #006d61;
+}
+
+#head .navbar-toggler {
+    border: none;
+   
+}
+.navbar-toggler {
+    position: relative;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+.navbar-toggler span {
+    display: block;
+    background-color: #1d6a60;
+    height: 2px;
+    width: 22px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform .35s ease-in-out;
+    -moz-transition: transform .35s ease-in-out;
+    -o-transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
+/*********************/
+/*       Home        */
+/*********************/
+
+#home{
+    position: relative;
+    padding: 10vw 0;
+    margin: 0;
+}
+
+#home .banner-image img{
+    width: 30vw;
+    margin: 0 -17px 0 auto;
+}
+
+.intro  {
+    display: table;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("../images/bg.svg") center center no-repeat;
+    filter:saturate(1.2);   
+    background-size: cover;
+}
+
+.intro h1 {
+	color: black;
+	font-size: 3.35vw;
+    font-weight: 300;
+    line-height: 60px;
+	text-transform: uppercase;
+    margin-top: 0;
+    word-spacing: 0.2cm;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    width: 80%;
+    font-family: 'Cardo', serif;
+    padding-right: 20%;
+    color: black;
+	font-size: 2em;
+    word-spacing: 0.2cm;
+	line-height: 40px;
+	margin-bottom: 40px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn-custom {  
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #006d61;
+	background-image: linear-gradient(to right, #006d61 0%, #2ebb98 100%);
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+.btn-custom:hover, .btn-custom:focus,  .btn-custom:active {
+	color: #fff;
+	background-image: none;
+	background-color: #6372ff;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/*********************/
+/*     About         */
+/*********************/
+
+#about {
+    padding: 100px 0;
+    background-color: rgba(243, 243, 243, 0.973);
+   
+}
+
+#about .about-text{
+    padding: 100px 0;
+    
+}
+#about h2{
+    text-align: left;
+    padding: 0 20px 30px 0px;
+    font-size: 45px;
+    color: rgb(45, 45, 88);
+
+}
+#about p{
+    text-align: justify;
+}
+
+#about .why {
+    padding-top: 80px;
+    padding-left: 80px;
+
+}
+
+#about .about-why .icon {
+    display: block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: -2%;
+}
+
+#about .about-why h4 {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+#about .about-why p {
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 13px;
+    padding: 10px 0 20px 30px;
+    line-height: 20px;
+}
+
+
+/*********************/
+/*     Services      */
+/*********************/
+
+#services{
+    padding: 100px 0 0 0;
+    background-color: white;
+}
+
+#services h2{
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+#services .cards-1 {
+    padding: 0;
+    margin: 0 ;
+    box-shadow: 6px 6px rgb(192, 191, 191);
+    text-align: center justify;
+    display: inline;
+}
+#services .cards-1 .row {
+    margin: 0;
+}
+
+#services .cards-1 .card {
+    max-width: 30%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 3px 9px 20px 0px #cacaca;
+}
+#services .cards-1 .card .card-footer {
+    border: 0;
+    background: transparent;
+}
+#services .cards-1 .card .btn-learn {
+    font-size: .85rem;
+    padding-right: 14px;
+    position: relative;
+    background: transparent;
+}
+#services .cards-1 .card .btn-learn:before,
+#services .cards-1 .card .btn-learn:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 2px;
+    width: 7px;
+    background: #347ef6;
+    transform: rotate(45deg);
+}
+#services .cards-1 .card .btn-learn:after {
+    top: 9px;
+    transform: rotate(-45deg);
+}
+#services .cards-1 .card:first-of-type {
+    margin-left: 0;
+}
+#services .cards-1 .card:last-of-type {
+    margin-right: 0;
+}
+
+#services .cards-1 .card-title {
+	margin-bottom: 6%;
+}
+.card-text {
+    font-size: 14px;
+    color: #777;
+}
+#services .cards-1 .card-body {
+    padding: 10px 0;
+}
+
+
+/*********************/
+/*     Clients       */
+/*********************/
+
+#clients {
+	padding: 100px 0;
+	background:white;
+}
+#clients h2{
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+    padding: 0 0 25px 0;
+}
+#clients img{
+    display: block;
+    width: 150px;
+    border-radius: 50%;    
+}
+
+
+/*********************/
+/*     Careers       */
+/*********************/
+
+#careers {
+    padding: 100px 0 ;
+    background-color: rgba(141, 219, 215, 0.3);
+}
+
+#careers h2 {
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+    padding: 0 0 15px 0;
+    
+}
+.careers-text {
+    margin: 0 auto;
+    max-width: 750px;
+}
+#careers p {
+    padding: 0 0 15px 0;
+    text-align: justify;
+}
+
+
+.btn-more {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+    color: #fff;
+	background-color:  #086161;
+	background-image: linear-gradient(to right, #28af99 0%, #086161 100%);
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+.btn-more:hover, .btn-custom:focus, .btn-custom.active {
+	color: #fff;
+	background-image: none;
+	background-color: #6372ff;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/*********************/
+/*     Career Page   */
+/*********************/
+
+#career{
+    padding: 100px 0 0 0 ;
+    background-color: rgba(141, 219, 215, 0.3);
+      
+}
+
+#career .bgteam {
+    height: 300px;
+    background: url("../images/background/career-bg.svg") center no-repeat; 
+    background-position: 35% 0%;
+}
+
+#career .title{
+    padding: 0 0 50px 0;
+}
+
+#career  h2 {
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+    padding: 80px 0 15px 0;
+}
+#career .title p {
+    font-size: 15px;
+}
+#career .description{
+    padding: 0  0 80px 0;
+    background-color: white;
+}
+#career .description p{
+    padding: 0px 0 0 0 ;
+    width: 90%;
+    text-align: justify;
+}
+
+#career .description .btn-more{
+    margin: 25px 0 0 0;
+}
+
+#career .benefits{
+    padding: 0  0  80px 0;
+    background: url("../images/background/benefits-bg.svg") center no-repeat;
+    background-size: cover;
+    background-position: 100% 55%;
+}
+
+#career .benefits p{
+    color: rgb(122, 118, 118);
+    padding: 15px 0 30px 0;
+    
+}
+
+#career .benefits h2{
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+}
+
+#career .benefits .row{
+   margin: 3% 0 0 15%;
+}
+
+#career .block {
+    width: 100px;
+    height: 70px;
+ 
+}
+
+#career .benefits .block path {
+    stroke:rgb(226, 110, 16);
+    stroke-width: 10px;
+    color: rgb(233, 232, 243);  
+} 
+
+#career .opening{
+    padding: 80px  0px ;
+    background-color: white;
+}
+#career .opening p{
+    margin: 0 0 6% 30%;
+    width: 40%;
+    background-color: white;
+    color: rgb(133, 130, 130);
+} 
+#career  button {
+    border: none;
+    background: none;
+    color: blue;
+    text-decoration: underline;
+} 
+#career .table{
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 12px 14px #e2e2e2;
+}
+#career  .table thead th {
+    border: 0;
+    background: #1d6a60;
+    color: #fff;
+}
+#career  .table thead th:first-of-type {
+    border-top-left-radius: 5px;
+}
+#career  .table thead th:last-of-type {
+    border-top-right-radius: 5px;
+}
+#career .table .btn-learn{
+    font-size: 14px;
+    border-radius: 4px;
+    color:  #086161;
+    border-color:  #086161;
+    background-image: linear-gradient( rgb(201, 200, 200) 0% white 100%);
+}
+
+#career .table .btn-learn:hover{
+    color: #fff;
+    background-color: #1e6960;
+}
+
+
+/*********************/
+/*     Technology    */
+/*********************/
+
+#technology {
+    padding: 100px 0 50px 0; 
+}
+
+#technology h2 {
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+}
+
+#technology .row {
+    padding-left: 15%;
+}
+
+
+/*********************/
+/*     Team          */
+/*********************/
+
+#team {
+    padding: 100px 0;   
+}
+
+#team h2 {
+    color: rgb(45, 45, 88);
+    font-size: 45px;
+    padding: 0;
+}
+
+#team h4 {
+    margin: 5px 0; 
+    font-size: 20px;  
+}
+
+#team .team-img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 50%;
+}
+#team .thumbnail {
+	background: transparent;
+    border: 0;
+
+}
+#team .thumbnail .caption {	
+    color: black;
+    font-size: 14px;    
+}
+
+
+/*********************/
+/*     Contact page   */
+/*********************/
+
+#contact  {
+    padding: 100px 0 0 0;
+    background-color: rgb(141, 219, 215, 0.5);
+}
+
+#contact .contact-social {
+    height: 300px;
+    background: url("../images/background/contact-bg.svg") center no-repeat;
+    background-size: cover;
+}
+
+#contact .contact-social h1 {
+    padding: 80px 0 0 0;
+}
+
+#contact .social {
+    padding: 0 0 80px 0;
+}
+
+#contact .social ul  {
+    padding: 10px 10px 10px 45px;
+}
+#contact .social ul li {
+    display: inline-block;
+}
+
+#contact .social li a {
+    font-size: 22px;
+	width: 100px;
+	height: 100px;
+    padding: 12px 35px 0 0;
+    color: #067667;
+}
+#contact .social li a:hover {
+	color:  rgb(45, 45, 88);
+}
+
+
+#contact .contact-message{
+    padding: 8vw 0;
+    background-color: white;
+	color: rgb(45, 45, 88);
+}
+
+#contact .section-title {
+    margin-bottom: 20px;
+}
+
+#contact h2 {
+	color:  rgb(45, 45, 88);
+	margin-top: 10px;
+    font-size: 40px;
+}
+
+
+#contact form {
+	padding-top: 20px;
+}
+
+#contact .btn-custom:hover {
+	color: white;
+	background-color: #6372ff;
+}
+
+/* Contact details */
+#contact .contact-info {
+    margin: 12% 0 0 0;
+    padding-left: 10%;
+}
+
+#contact h3 {
+    color: rgb(45, 45, 88);
+	padding-bottom: 5%;
+    font-weight: 250;
+    font-size: 20px;
+    width: 100%;
+}
+
+#contact .contact-item {
+    font-size: 15px;
+    display: flex;
+}
+#contact .contact-item .icon {
+    color: #067667;
+    margin-right: 10px;
+}
+#contact .contact-item span {
+	color: black;
+	display: block;
+}
+#contact .contact-item i.fa {
+	margin-right: 10px;
+}
+
+/* Google Map */
+
+.map-container{
+    overflow:hidden;
+    position:relative;
+}
+
+/*********************/
+/*     Footer        */
+/*********************/
+
+#footer {
+    background-color: rgba(141, 219, 215, 0.3);
+    font-size: 0.95em;  
+    color: rgb(45, 45, 88);
+}
+
+#footer h4 {
+    padding-bottom: 20px ;
+}
+#footer .align{
+    padding-top: 60px;
+    width: 100%;
+}
+
+#footer ul {
+    list-style: none;
+    padding-right: 0;
+}
+
+.footer-social a {
+    color: #fff;
+}
+.footer-social a:hover {
+    color: #e77b0d;
+}
+
+#footer .address {
+    padding-left: 0;
+}
+
+#footer p {
+    color: #465369;
+	margin-bottom: 5px;  
+}
+.footer-top {
+    padding: 2.5rem 0;
+}
+.footer-nav {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+}
+.footer-nav a {
+    color: #465369;
+    line-height: 30px;
+}
+
+#footer .footer-bottom {
+    padding: 18px 0;
+    background: #1c6b60;
+}
+.copyright-text {
+    color: #eee;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+/*********************/
+/*     Media query   */
+/*********************/
+
+@media only screen and (max-width: 1024px) {
+    .intro  { 
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    #home .intro-text{
+        margin-top: calc(100% * 1.7/4);
+        padding-left: 0%;
+    }
+
+    #home .intro .h1{
+        margin-top: 35%;
+        padding-left: 0%;
+        font-size: 2px;
+    }
+
+    .btn-custom{
+        margin-bottom: 250px;
+    }
+    
+    .cards-1 .card {
+        min-width: 80%;
+        margin: auto;
+    }
+
+    #team .thumbnail .caption {
+        padding-right: 25%;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    #services {
+        overflow-x: hidden;
+    }
+    .navbar-collapse.collapsing .navbar-nav,
+    .navbar-collapse.show .navbar-nav {
+        margin-top: 20px;
+        height: calc(100vh - 108px);
+    }
+    .navbar-collapse .navbar-nav li {
+        padding: 10px 0;
+    }
+    .bgColor{
+        background-color: white;
+    }
+
+    .btn-custom{
+        margin-bottom: 250px;
+    }
+
+    .intro  { 
+        width: 100vw;
+        height: auto;
+        background-size: cover;
+        background-position: 40% 100%;
+    }
+
+    #home .intro-text{
+        padding: 100px 0 0 0;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    #about .about-text{
+        padding: 0;
+    }
+
+    #about .why {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    #about .about-why .new {
+        width: 80%;
+    }
+
+    #about .about-why .text {   
+        padding-left: 0;
+    }
+    
+    .cards-1 .card {
+        min-width: 80%;
+        margin: auto;
+    }
+
+    #clients .thumbnail {
+        padding-left: 28%;
+    }
+
+    #career .benefits .row {
+        margin: 0;
+    }
+
+    #technology .row {
+        padding-left: 5%;
+    }
+
+    #team {
+        padding: 100px 0;
+    }
+
+    #contact .contact-social {
+        background-position: 35% 0%;
+    }
+    
+    #contact .contact-message { 
+        text-align: center;
+    }
+
+    #contact .form-control {
+        padding:0;
+    }
+    #contact .btn-custom {
+        margin-bottom: 0px;
+    }
+
+    #contact .contact-info { 
+        margin: 0;
+        padding: 25% 0 5% 0;
+        text-align: center;   
+    }
+
+    #contact .contact-item {
+        padding:0 0 0 15%;
+    }
+
+    #footer .address {
+        margin-top: 30px;
+    }
+
+    #footer ul {
+        padding: 0;
+    }
+
+    #footer .align {
+        padding-top: 0;
+    }
+    #footer img {
+        display: none;
+    }
+}
+
+
